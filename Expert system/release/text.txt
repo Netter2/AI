@@ -1,0 +1,374 @@
+abilities
+
+question
+Ваш пол?
+answer
+Мужской.
+tags: male
+answer
+Женский.
+tags: female
+
+question
+Готовы ли вы на длительное время покинуть родной город?
+answer
+Готов.
+tags: far
+answer
+Не готов.
+tags: near
+
+question
+Насколько материально обеспечена ваша семья?
+answer
+Хорошо обеспечена.
+tags: rich
+answer
+Средне обеспечена.
+tags: not_rich
+answer
+Плохо обеспечена.
+tags: poor, not_rich
+
+question
+Насколько вы физически развиты?
+answer
+Я нахожусь в хорошей форме.
+tags: sports, not_weak
+answer
+Я нахожусь в плохой форме.
+answer
+Средне.
+tags: not_weak
+
+question
+Насколько для вас важны пожелания ваших близких (родственников, друзей и тд)?
+answer
+Очень важны!
+tags: familiar
+answer
+Я учитываю их, если они не противоречат моим желаниям.
+tags: familiar_lite
+answer
+Мне все равно.
+
+question
+Как вы оцениваете свои общие знания?
+answer
+Я много знаю!
+tags: clever
+answer
+Я мало знаю.
+tags: stupid
+
+limitations
+
+question
+Подлежите ли вы призыву?
+tags: male
+answer
+Да.
+tags: army
+answer
+Нет.
+
+question
+Как вы относитесь к службе в армии?
+tags: army
+answer
+Хорошо, хочу служить.
+work 20
+tags: contract
+answer
+Плохо, не хочу служить.
+college 10
+university 10
+tags: avoid
+answer
+Нейтрально.
+
+question
+Хотите ли вы заниматься домохозяйством?
+tags: female
+answer
+Да.
+work 15
+answer
+Нет.
+college 10
+university 10
+answer
+Не знаю.
+
+question
+Хотите ли вы заводить много детей?
+tags: female
+answer
+Да.
+work 5
+answer
+Нет.
+college 5
+university 10
+answer
+Не знаю.
+
+question
+Есть ли в вашем городе высшие образовательные организации?
+tags: near
+answer
+Есть.
+answer
+Нет.
+college 25
+work 25
+
+question
+Есть ли в вашем городе средние профессиональные учебные заведения?
+tags: near
+answer
+Есть.
+answer
+Нет.
+university 25
+work 25
+
+question
+Умеете ли вы готовить?
+tags: far
+answer
+Умею.
+answer
+Не умею.
+work 10
+
+question
+Умеете ли вы уживаться с людьми?
+tags: far, not_rich
+answer
+Умею.
+answer
+Не умею.
+work 20
+
+question
+Готовы ли вы работать во ввремя учебы?
+tags: poor
+answer
+Да.
+college 15
+university 15
+answer
+Нет.
+work 20
+
+question
+Занимаетесь ли вы спортом и если да, то хотите ли вы связать с ним жизнь?
+tags: sports
+answer
+Нет
+answer
+Да, но это хобби
+answer
+Да, и я хочу заниматься профессионально
+college 20
+
+question
+Куда, по мнению ваших близких, вам следует поступать?
+tags: familiar
+answer
+В институт.
+university 15
+answer
+В колледж.
+college 15
+answer
+Идти работать.
+work 15
+
+question
+Куда, по мнению ваших близких, вам следует поступать?
+tags: familiar_lite
+answer
+В институт.
+university 5
+answer
+В колледж.
+college 5
+answer
+Идти работать.
+work 5
+
+question
+Готовы ли вы или ваша семья оплачивать обучение?
+tags: stupid, rich
+answer
+Да.
+answer
+Нет.
+work 20
+college 10
+
+question
+Вас интересуют получение практических или теоритических навыков?
+tags: learn
+answer
+Практические.
+college 15
+answer
+Теоритические.
+university 15
+answer
+Нет предпочтений.
+university 10
+college 10
+
+question
+Насколько скоро вы планируете начать работать?
+answer
+Как можно быстрее.
+work 15
+answer
+Средне.
+college 15
+answer
+Не скоро.
+university 15
+answer
+Не определился.
+
+question
+Насколько тяжело вам дается учеба?
+answer
+Мне легко, я все схватываю на лету.
+university 20
+answer
+Средне.
+college 20
+answer
+Мне тяжело, каждая новая тема дается с трудом.
+work 20
+
+question
+Нужна ли вам дальнейшая учеба?
+answer
+Да.
+university 5
+college 5
+tags: learn
+answer
+Нет.
+work 20
+answer
+Мне все равно.
+
+question
+Насколько хорошо вы умеете работать в команде?
+answer
+Я - командный игрок!
+university 5
+work 5
+answer
+Я не могу работать в команде, я одиночка.
+college 5
+work 5
+answer
+Мне все равно.
+
+question
+Насколько легко вы подчиняетесь приказам начальства?
+answer
+Мне легко выполнять чужие команды.
+work 15
+college 10
+answer
+Мне очень тяжело подчинятся малознакомым людям.
+university 15
+
+question
+Планируете ли вы продолжать обучение после 9 класса?
+answer
+Да.
+university 5
+answer
+Нет.
+college 15
+work 15
+answer
+Не знаю.
+
+question
+Выигрывали ли вы какие-то олимпиады, которые дают бонусы при поступлении?
+answer
+Да.
+university 15
+answer
+Нет.
+college 5
+work 5
+
+preferences
+
+question
+Хотите ли вы служить по контракту?
+tags: contract
+answer
+Хочу.
+work 20
+answer
+Не хочу.
+
+question
+Готовы ли вы заниматься физический трудом?
+tag: not_weak
+answer
+Готов.
+work 20
+answer
+Не готов.
+
+question
+Готовы ли вы заниматься низкоквалифицированным трудом?
+answer
+Готов.
+work 20
+answer
+Не готов.
+
+question
+Хотите ли вы работать по узкой специальности?
+answer
+Да.
+college 20
+answer
+Нет.
+
+question
+Хотите ли вы учится в колледже?
+answer
+Хочу.
+college 10
+answer
+Не хочу.
+
+question
+Хотите ли вы заниматься научной деятельностью?
+answer
+Да.
+university 20
+answer
+Нет.
+
+question
+Хотите ли вы учится в институте?
+answer
+Хочу.
+university 10
+answer
+Не хочу.
+
+
+
+
+
+
